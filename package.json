@@ -1,0 +1,29 @@
+{
+  "name": "smartgoals",
+  "version": "1.0.0",
+  "description": "Will be updated soon",
+  "main": "indec.html",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tomdozz/SmartGoals.git"
+  },
+  "keywords": [
+    "smart",
+    "goals",
+    "project"
+  ],
+  "author": "Tom Andersson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tomdozz/SmartGoals/issues"
+  },
+  "homepage": "https://github.com/Tomdozz/SmartGoals#readme"
+}
