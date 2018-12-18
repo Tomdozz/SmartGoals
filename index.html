@@ -1,38 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Smart goals</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <!-- <link rel="icon" sizes="192x192" href="icon.png" /> -->
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <script src="main.js"></script>
-  </head>
-  <body>
-    <div class="container-fluid">
-      <div class="row header">
-        <div class="col-12">
-          <a href="/"> Be Smart, set new goals</a>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Smart goals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <!-- <link rel="icon" sizes="192x192" href="icon.png" /> -->
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div class="menu-container">
+    <div class="primary-menu">
+      <ul class="primary-menu-ul">
+        <li class="menu-item">
+          <a href="/">Set a goal</a>
+        </li>
+        <li class="menu-item">
+          <a href="/">Visulize you goals</a>
+        </li>
+        <li class="menu-item">
+          <a href="/">Settings</a>
+        </li>
+        <li class="menu-item">
+          <a href="/">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="wrap_video">
+    <video autoplay muted loop poster="" id="bgvid">
+      <!--<source src ="https://www.youtube.com/watch?v=g0dvJX4ikHM" type="video/mp4">-->
+      <!--<source src="https://player.vimeo.com/external/134025228.hd.mp4?s=9fdf3d36312edfd18b3a5a8df0be17e3&amp;profile_id=113"
+        type="video/mp4">-->
+    </video>
+    <div id="video_overlays"></div>
+  </div>
+  <div class="container-fluid">
+    <div class="row header">
+      <div class="col-12">
+        <div class="menu-toggle" onclick="menutoggle(this)">
+          <div class="bar"></div>
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+        </div>
+        <div class="main-icon">
+          <h1>
+            Be<br>
+            Smart
+          </h1>
         </div>
       </div>
-      <div class="row content">
-        <!--
+    </div>
+    <div class="row content">
+      <!--
         <div class="col-md-12">
           <table class="">
             <thead>
@@ -72,8 +102,9 @@
             </tbody>
           </table>
         </div>-->
-      </div>
-      <div class="row footer"></div>
     </div>
-  </body>
+    <div class="row footer"></div>
+  </div>
+</body>
+
 </html>
