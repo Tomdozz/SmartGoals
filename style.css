@@ -29,7 +29,10 @@ video#bgvid {
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background-size: cover; 
+  background-size: contain; 
+}
+video#bgvid video{
+  transform: scale(1.3);
 }
 /*Toggle menu btn*/
 .menu-toggle{
@@ -38,9 +41,6 @@ video#bgvid {
   top: 5%;
   z-index: 10;
   cursor: pointer;
-}
-.menu-toggle:hover{
-  color: grey;
 }
 .bar, .bar1, .bar2{
   width: 40px;
