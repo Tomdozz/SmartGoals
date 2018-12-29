@@ -26,8 +26,13 @@
 
     <script src="main.js"></script>
   </head>
-
   <body>
+    <div id="wrap_video">
+      <video autoplay muted loop poster="" id="bgvid">
+        <source src="video/Åre_short.mp4" type="video/mp4" />
+      </video>
+      <div id="video_overlays"></div>
+    </div>
     <div class="menu-container">
       <div class="primary-menu">
         <ul class="primary-menu-ul">
@@ -38,80 +43,30 @@
         </ul>
       </div>
     </div>
-    <div id="wrap_video">
-      <video autoplay muted loop poster="" id="bgvid">
-        <source
-          src="video/Åre_short.mp4"
-          type="video/mp4"
-        />
-        <!--
-          <source src ="https://www.youtube.com/watch?v=g0dvJX4ikHM" type="video/mp4">
-        -->
-        <!--
-          <source src="https://player.vimeo.com/external/134025228.hd.mp4?s=9fdf3d36312edfd18b3a5a8df0be17e3&amp;profile_id=113"
-          type="video/mp4">
-        -->
-      </video>
-      <div id="video_overlays"></div>
+    <div class="main-icon"><h1>BE S.M.A.R.T</h1></div>
+    <div class="menu-toggle" onclick="menutoggle(this)">
+      <div class="bar"></div>
+      <div class="bar1"></div>
+      <div class="bar2"></div>
     </div>
+    <div class="mid"><h1>A goal without a plan is just a wish</h1></div>
     <div class="container-fluid">
-      <div class="row header">
+      <div class="row header"></div>
+      <div class="row content main-page">
         <div class="col-12">
-          <div class="menu-toggle" onclick="menutoggle(this)">
-            <div class="bar"></div>
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-          </div>
-          <div class="main-icon">
-            <h1>
-              A<br />
-              Website
-            </h1>
+          <div class="main-goal">
+            <div id="smart-table">
+              <div class="letter" id="s"><h1>S</h1></div>
+              <div class="letter" id="m"><h1>M</h1></div>
+              <div class="letter" id="a"><h1>A</h1></div>
+              <div class="letter" id="r"><h1>R</h1></div>
+              <div class="letter" id="t"><h1>T</h1></div>
+            </div>
+            <div id="category">
+              fsafa
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row content">
-        <!--
-          <div class="col-md-12">
-            <table class="">
-              <thead>
-                <tr></tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">S</th>
-                  <td>Specific</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <th scope="row">M</th>
-                  <td>Measurable</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <th scope="row">A</th>
-                  <td>Achievable</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
-                </tr>
-                <tr>
-                  <th scope="row">R</th>
-                  <td>Reachable</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
-                </tr>
-                <tr>
-                  <th scope="row">T</th>
-                  <td>Time</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        -->
       </div>
       <div class="row footer"></div>
     </div>

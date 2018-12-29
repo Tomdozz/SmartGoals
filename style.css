@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
 .container-fluid {
 }
@@ -6,18 +6,19 @@
   min-height: 100px;
   line-height: 100px;
 }
-.header{
+.header {
   /*background-color: black;*/
 }
 #wrap_video {
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%; 
+  min-width: 100%;
   min-height: 100%;
+  overflow: hidden;
 }
-video#bgvid { 
-  position: fixed;
+video#bgvid {
+  position: absolute;
   top: 50%;
   left: 50%;
   min-width: 100%;
@@ -25,87 +26,174 @@ video#bgvid {
   width: auto;
   height: auto;
   z-index: -100;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background-size: contain; 
+  background-size: contain;
 }
-video#bgvid video{
+video#bgvid video {
   transform: scale(1.3);
 }
 /*Toggle menu btn*/
-.menu-toggle{
+.menu-toggle {
   position: fixed;
-  left: 95%;
-  top: 5%;
   z-index: 10;
   cursor: pointer;
 }
-.bar, .bar1, .bar2{
+.bar,
+.bar1,
+.bar2 {
   width: 40px;
   height: 10px;
   margin-bottom: 5px;
-  background-color: black;
+  background-color: white;
   transition: 0.4s;
 }
-.change .bar{
+.change .bar {
   width: 35px;
   background-color: white;
-  transform: rotate(45deg)translate(8px,4px);
+  transform: rotate(45deg) translate(8px, 4px);
 }
-.change .bar1{
+.change .bar1 {
   width: 35px;
   background-color: white;
-  transform: rotate(-45deg)translate(6px,-3px);
+  transform: rotate(-45deg) translate(6px, -3px);
 }
-.change .bar2{
+.change .bar2 {
   opacity: 0.5;
 }
 /*--------------------------------------------------*/
 /*Primary menu*/
-.menu-container{
-  position: absolute;
-  transform: translateY(-100%); 
+.menu-container {
+  position: fixed;
+  transform: translateY(-100%);
   z-index: 5;
 }
-.primary-menu{
+.primary-menu {
   width: 100vw;
   overflow: hidden;
   height: 100vh;
-  background-color:black;
+  background-color: black;
   opacity: 0.9;
-  transition:  0.5s;
+  transition: 0.5s;
 }
-.change .primary-menu{
-  transform: translateY(100%); 
+.change .primary-menu {
+  transform: translateY(100%);
 }
-.primary-menu-ul{
-  transform: translate(10%,80%);
-}
-.primary-menu ul{
+.primary-menu ul {
   list-style-type: none;
 }
-.primary-menu-ul a{
+.primary-menu-ul a {
   font-size: 50px;
   color: #eee;
 }
-.primary-menu-ul a:hover{
+.primary-menu-ul a:hover {
   text-decoration: none;
   color: grey;
 }
-.menu-item{
+.menu-item {
   transform: translateX(-100%);
   transition: 1s;
 }
-.change .menu-item{
-  transform: translateX(10%)
-}
 /*---------------------------------------------------------*/
 /*main-icon*/
-.main-icon{
+.main-icon {
+  position: absolute;
+  top: 8%;
+  left: 5%;
   cursor: pointer;
 }
-.main-icon h1{
-  font-family: 'Open Sans', sans-serif;
+.main-icon h1 {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+/*--------------------------------------------------------*/
+/*First page mid*/
+.mid {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  color: #eee;
+}
+/*---------------------------------------------------------*/
+.main-page{
+  position: absolute;
+  height: 100%;
+  top: 100%;
+  background-color:black;
+}
+.main-goal{
+  height: 100%;
+  padding: 10px;
+}
+#smart-table{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.letter{
+  margin: 15px;
+  cursor: pointer;
+}
+#category{
+  position: absolute;
+  top: -3px;
+  left: 300px;
+  z-index: -3;
+  background-color: grey;
+  width: auto;
+  margin: auto;
+  transition: 500ms;
+}
+/*.letter:hover{
+  background-color: #eee;
+}*/
+.letter h1{
+  color: #eee;
+}
+@media screen and (min-width:1px) and (max-width:480px) {
+  /*
+    Egenskaper för mobiler
+  */
+  .menu-toggle {
+    top: 10%;
+    left: 85%;
+  }
+  .change .menu-item {
+    transform: translateX(5%);
+  }
+  .primary-menu-ul {
+    transform: translate(1%, 50%);
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+  /*
+    Egenskaper för tablets
+  */
+  .menu-toggle {
+    top: 10%;
+    left: 85%;
+  }
+  .change .menu-item {
+    transform: translateX(5%);
+  }
+  .primary-menu-ul {
+    transform: translate(10%, 80%);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  /*
+    Egenskaper för desktop
+  */
+  .menu-toggle {
+    top: 10%;
+    left: 90%;
+  }
+  .change .menu-item {
+    transform: translateX(10%);
+  }
+  .primary-menu-ul {
+    transform: translate(10%, 90%);
+  }
 }
